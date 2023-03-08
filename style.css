@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Scriptin;
+    src: url(assets/SCRIPTIN.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background: url(assets/pattern.png) repeat;
+    background-size: 25%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.topholder {
+    padding: 2vh 0 5vh 0;
+    height: auto;
+}
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 0.2rem;
+    font-weight: 300;
+    color: black;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 0.1em;
+    height: 0.1em;
+    background: pink;
+    font-family: Scriptin;
+    position: relative;
+    letter-spacing: 0.1em;
+    transition: 1s;
+
+}
+
+#circletext {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.buttons a {
+    color: black;
+    text-decoration: none;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: pink;
+    width: 10em;
+    padding: 0.5em;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.buttons {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    opacity: 0;
+    margin-top: 1.75em;
+    transition: 1s;
+}
+
+.rest {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    background: url(assets/patternalt.png);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 1.75em;
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons a:hover {
+    background: black;
+    color: white;
+    text-shadow: 0px 1px 5px rgb(255, 252, 252);
+}
+
+.rest .img img {
+    width: 10%;
+    transition: 0.3s;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.7em 0 0.7em 0;
+
+}
+
+hr {
+    background-color: black;
+    width: 98.5vw;
+
+}
+
+.images img {
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+}
+
+.images1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.75em;
+    padding: 1.75em;
+    justify-items: center;
+    align-content: center;
+}
+
+.images1 img {
+    width: 65%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    background: url(assets/patternaltalt.png);
+    background-size: 12.5%;
+    width: 100%;
+    padding: 1.75em;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em;
+    height: 35em;
+}
+
+.socials {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    height: 20em;
+    border-radius: 1.75em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.75em;
+}
+
+.socials button {
+    padding: 1em;
+    border-radius: 1.75em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.socialhandle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.socials button:hover {
+    background: #414141;
+    color: white;
+    
+}
+
+.socials button:hover > a {
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .buttons {
+        flex-direction: column;
+        margin: 1.75em 0 1.75em 0;
+    }
+
+    .circle {
+        width: 19em !important;
+        height: 19em !important;
+        font-size: 1rem !important;
+    }
+
+    .text {
+        font-size: 50%;
+    }
+
+    .images img {
+        width: 30%;
+    }
+
+    .menu {
+        height: 50vh !important;
+    }
+
+    .buttons>* {
+        margin: 10px;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.animate3:not(h1) {
+    font-size: 1.5rem;
+}
+
+@media (max-height: 600px) {
+    .circle {
+        width: 300px !important;
+        height: 300px !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-height: 500px) {
+    .circle {
+        width: 300px !important;
+        height: 300px !important;
+        font-size: 1rem !important;
+    }
+}
