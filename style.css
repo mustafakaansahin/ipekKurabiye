@@ -35,7 +35,7 @@ body {
 }
 
 .topholder {
-    padding: 2vh 0 5vh 0;
+    padding: 4vh 0 4vh 0;
     height: auto;
 }
 
@@ -144,7 +144,7 @@ hr {
 }
 
 .images1 img {
-    width: 65%;
+    width: 95%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 0.5s;
 }
@@ -260,16 +260,20 @@ hr {
 
 @media (max-height: 600px) {
     .circle {
-        width: 300px !important;
-        height: 300px !important;
+        width: 19em !important;
+        height: 19em !important;
         font-size: 1rem !important;
     }
 }
 
 @media (max-height: 500px) {
     .circle {
-        width: 300px !important;
-        height: 300px !important;
+        width: 16em !important;
+        height: 16em !important;
         font-size: 1rem !important;
+    }
+
+    .buttons {
+        font-size: 1rem;
     }
 }
