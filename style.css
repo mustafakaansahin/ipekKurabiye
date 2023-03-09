@@ -3,7 +3,7 @@
     src: url(assets/SCRIPTIN.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 * {
     margin: 0;
@@ -17,21 +17,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 body {
     background: url(assets/pattern.png) repeat;
     background-size: 25%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .topholder {
@@ -56,7 +53,6 @@ body {
     position: relative;
     letter-spacing: 0.1em;
     transition: 1s;
-
 }
 
 #circletext {
@@ -67,10 +63,10 @@ body {
 .buttons a {
     color: black;
     text-decoration: none;
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     background-color: pink;
     width: 10em;
     padding: 0.5em;
+    border-radius: 10px;
     margin-left: 1.75em;
     margin-right: 1.75em;
     text-align: center;
@@ -78,7 +74,7 @@ body {
 }
 
 .buttons {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,11 +85,12 @@ body {
 }
 
 .rest {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 1.5rem;
     background: url(assets/patternalt.png);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding: 1.75em;
     color: white;
     height: auto;
@@ -119,18 +116,17 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 0.7em 0 0.7em 0;
-
 }
 
 hr {
     background-color: black;
     width: 98.5vw;
-
 }
 
 .images img {
     width: 20%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 0.5s;
 }
 
@@ -145,7 +141,8 @@ hr {
 
 .images1 img {
     width: 95%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: 0.5s;
 }
 
@@ -170,6 +167,7 @@ hr {
     align-items: center;
     flex-direction: column;
     margin: 2em;
+    width: 50em;
     height: 35em;
 }
 
@@ -180,20 +178,23 @@ hr {
     height: 20em;
     border-radius: 1.75em;
     margin-top: 1em;
+    width: 50em;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-start;
     line-height: 1.75em;
+    
 }
 
 .socials button {
     padding: 1em;
     border-radius: 1.75em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     cursor: pointer;
     transition: 0.5s;
     margin: 0.5em 0 0.5em 0;
+    font-size: 1em;
 }
 
 .socialhandle {
@@ -202,20 +203,18 @@ hr {
     align-items: center;
 }
 
-.socials a{
+.socials a {
     color: black;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
 
 .socials button:hover {
     background: #414141;
     color: white;
-    
 }
 
-.socials button:hover > a {
+.socials button:hover>a {
     color: white;
 }
 
