@@ -23,6 +23,7 @@ body {
     background: url(assets/pattern.png) repeat;
     background-size: 25%;
     font-family: "Poppins", sans-serif;
+    
 }
 
 .menu {
@@ -33,7 +34,10 @@ body {
 
 .topholder {
     padding: 4vh 0 4vh 0;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle {
@@ -60,7 +64,7 @@ body {
     transition: 0.5s;
 }
 
-.buttons a {
+/* .buttons a {
     color: black;
     text-decoration: none;
     background-color: pink;
@@ -82,7 +86,7 @@ body {
     opacity: 0;
     margin-top: 1.75em;
     transition: 1s;
-}
+} */
 
 .rest {
     font-family: "Poppins", sans-serif;
@@ -100,11 +104,14 @@ body {
     flex-direction: column;
 }
 
-.buttons a:hover {
+.text {
+    opacity: 0;
+}
+/* .buttons a:hover {
     background: black;
     color: white;
     text-shadow: 0px 1px 5px rgb(255, 252, 252);
-}
+} */
 
 .rest .img img {
     width: 10%;
@@ -167,8 +174,19 @@ hr {
     align-items: center;
     flex-direction: column;
     margin: 2em;
-    width: 50em;
+    width: 30vw;
     height: 35em;
+}
+
+.contact h1 {
+    color: white;
+    background-color: black;
+    width: 50vw;
+    border-radius: 1.75em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials {
@@ -178,13 +196,36 @@ hr {
     height: 20em;
     border-radius: 1.75em;
     margin-top: 1em;
-    width: 50em;
+    width: 50vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     line-height: 1.75em;
     
+}
+
+#social a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social i {
+    font-size: 1.75em;
+}
+
+.equip3 {
+    opacity: 1;
+}
+
+.equip2{
+    margin: 0.5em 0px !important;
+    opacity: 1 !important;
+}
+
+
+#social a p {
+    text-align: center;
 }
 
 .socials button {
@@ -193,8 +234,10 @@ hr {
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     transition: 0.5s;
-    margin: 0.5em 0 0.5em 0;
+    margin: -1.7em;
+    opacity: 0;
     font-size: 1em;
+    width: 20em;
 }
 
 .socialhandle {
@@ -253,8 +296,15 @@ hr {
     cursor: not-allowed;
 }
 
-.animate3:not(h1) {
-    font-size: 1.5rem;
+.spawn {
+    opacity: 0;
+    width: 0% !important;
+    
+}
+
+.equip {
+    width: 20% !important;
+    opacity: 1;
 }
 
 @media (max-height: 600px) {
@@ -265,6 +315,11 @@ hr {
     }
 }
 
+@media (prefers-reduced-motion) {
+    .spawn{
+        transition: none;
+    }
+}
 @media (max-height: 500px) {
     .circle {
         width: 16em !important;
